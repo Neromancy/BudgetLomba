@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith Budget</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              background: '#f8fafc', // slate-50
+              surface: '#ffffff',
+              primary: {
+                DEFAULT: '#6366f1', // indigo-500
+                hover: '#4f46e5',   // indigo-600
+                light: '#eef2ff',   // indigo-50
+                text: '#ffffff'
+              },
+              secondary: {
+                DEFAULT: '#64748b', // slate-500
+                hover: '#475569',   // slate-600
+              },
+              accent: {
+                DEFAULT: '#10b981', // emerald-500
+                light: '#ecfdf5',   // emerald-50
+                text: '#065f46'    // emerald-800
+              },
+              danger: {
+                DEFAULT: '#ef4444', // red-500
+                light: '#fee2e2',   // red-100
+                text: '#991b1b'     // red-800
+              },
+              warning: {
+                DEFAULT: '#f59e0b', // amber-500
+                light: '#fffbeb',   // amber-50
+                text: '#b45309'     // amber-700
+              },
+              text: {
+                primary: '#1e293b', // slate-800
+                secondary: '#64748b', // slate-500
+                muted: '#94a3b8',   // slate-400
+              },
+              brand: '#6366f1',
+              border: '#e2e8f0', // slate-200
+            },
+            keyframes: {
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+              'fade-in-up': 'fade-in-up 0.3s ease-out forwards',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-background">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

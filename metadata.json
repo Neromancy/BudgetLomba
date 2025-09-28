@@ -1,0 +1,7 @@
+{
+  "name": "Zenith Budget",
+  "description": "An intelligent, AI-powered financial partner designed to demystify personal finance. It blends budgeting principles with AI to help you track expenses, set goals, and achieve financial wellness.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
