@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react';
-import { Goal, Transaction } from '../types';
-import { PlusIcon, SparklesIcon, LoadingSpinner, StarIcon } from './Icons';
-import Modal from './Modal';
-import { suggestGoals, createBudgetPlan, updateBudgetPlan } from '../services/geminiService';
+import { Goal, Transaction } from '../types.ts';
+import { PlusIcon, SparklesIcon, LoadingSpinner, StarIcon } from './Icons.tsx';
+import Modal from './Modal.tsx';
+import { suggestGoals, createBudgetPlan, updateBudgetPlan } from '../services/geminiService.ts';
 import ReactMarkdown from 'react-markdown';
 
 

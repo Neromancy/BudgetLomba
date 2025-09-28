@@ -1,10 +1,10 @@
 
 import React, { useState, useMemo, ChangeEvent } from 'react';
-import { Transaction, TransactionType, Category } from '../types';
-import { PlusIcon, CameraIcon, SparklesIcon, LoadingSpinner } from './Icons';
-import Modal from './Modal';
-import { suggestCategory, scanReceipt } from '../services/geminiService';
-import { MOCK_RECEIPT_IMAGE_BASE64 } from '../constants';
+import { Transaction, TransactionType, Category } from '../types.ts';
+import { PlusIcon, CameraIcon, SparklesIcon, LoadingSpinner } from './Icons.tsx';
+import Modal from './Modal.tsx';
+import { suggestCategory, scanReceipt } from '../services/geminiService.ts';
+import { MOCK_RECEIPT_IMAGE_BASE64 } from '../constants.ts';
 
 interface TransactionsViewProps {
     transactions: Transaction[];

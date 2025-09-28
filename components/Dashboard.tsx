@@ -1,10 +1,10 @@
 
 import React, { useState } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip } from 'recharts';
-import { Goal } from '../types';
-import Modal from './Modal';
-import { analyzeScenario } from '../services/geminiService';
-import { LoadingSpinner, SparklesIcon } from './Icons';
+import { Goal } from '../types.ts';
+import Modal from './Modal.tsx';
+import { analyzeScenario } from '../services/geminiService.ts';
+import { LoadingSpinner, SparklesIcon } from './Icons.tsx';
 import ReactMarkdown from 'react-markdown';
 
 

@@ -1,6 +1,6 @@
 
 import { GoogleGenAI, GenerateContentResponse, Type } from '@google/genai';
-import { Transaction, Goal } from '../types';
+import { Transaction, Goal } from '../types.ts';
 
 if (!process.env.API_KEY) {
   // In a real app, you'd want to handle this more gracefully.

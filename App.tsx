@@ -1,13 +1,13 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
-import { Transaction, Goal, View, TransactionType, Category } from './types';
-import { DashboardIcon, TransactionsIcon, GoalsIcon, SparklesIcon, StarIcon } from './components/Icons';
-import { DEFAULT_CATEGORIES, POINTS_FOR_TRANSACTION, POINTS_FOR_NEW_GOAL, POINTS_FOR_COMPLETING_GOAL } from './constants';
-import Modal from './components/Modal';
+import { Transaction, Goal, View, TransactionType, Category } from './types.ts';
+import { DashboardIcon, TransactionsIcon, GoalsIcon, SparklesIcon, StarIcon } from './components/Icons.tsx';
+import { DEFAULT_CATEGORIES, POINTS_FOR_TRANSACTION, POINTS_FOR_NEW_GOAL, POINTS_FOR_COMPLETING_GOAL } from './constants.ts';
+import Modal from './components/Modal.tsx';
 // Import Views
-import Dashboard from './components/Dashboard';
-import TransactionsView from './components/TransactionsView';
-import GoalsView from './components/GoalsView';
+import Dashboard from './components/Dashboard.tsx';
+import TransactionsView from './components/TransactionsView.tsx';
+import GoalsView from './components/GoalsView.tsx';
 
 // Sample Data
 const sampleTransactions: Transaction[] = [
