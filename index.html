@@ -10,6 +10,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
+      // Force-unregister any existing service workers. This is a common fix for deployment
+      // issues where a stale service worker from a previous project caches files
+      // and causes loading errors after a new deployment.
+      if (window.navigator && navigator.serviceWorker) {
+        navigator.serviceWorker.getRegistrations()
+          .then(registrations => {
+            if (registrations.length) {
+              console.log('Unregistering stale service workers...');
+              for (const registration of registrations) {
+                registration.unregister();
+              }
+              // After unregistering, reload the page to ensure the new content is fetched
+              // without interception. A timeout gives the unregister call time to complete.
+              setTimeout(() => window.location.reload(), 500);
+            }
+          })
+          .catch(error => {
+            console.error('Error unregistering service worker:', error);
+          });
+      }
+    </script>
+    <script>
       tailwind.config = {
         theme: {
           extend: {
