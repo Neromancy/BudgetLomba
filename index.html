@@ -108,9 +108,8 @@
     <script type="text/babel" data-type="module" data-presets="react,typescript">
       // Polyfill for process.env in a browser environment where it doesn't exist.
       // This prevents a "process is not defined" crash and allows the app to render.
-      // AI features will not work until a valid API_KEY is configured for this environment.
       if (typeof window.process === 'undefined') {
-        window.process = { env: { API_KEY: undefined } };
+        window.process = { env: { API_KEY: 'AIzaSyBgEAsngpUn164_pTlAu83JP5hRnSKhgCc' } };
       }
 
       import React, { useState, useMemo, useEffect } from 'react';
